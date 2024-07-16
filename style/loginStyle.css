@@ -1,0 +1,113 @@
+body{
+    overflow: hidden;
+}
+
+.float-left{
+    width: 35%;
+    float: left;
+    background: linear-gradient(#170048, #6D84FF);
+    height: 97.5vh;
+    margin: auto;
+
+}
+
+.float-right{
+    width: 65%;
+    float: right;
+    margin-top: 14%;
+    height: 100vh;
+}
+
+.form-bg{
+    background-color: rgb(199, 197, 197);
+    padding: 2%;
+    width:fit-content;
+    border-radius: 2%;
+    margin-left: 25%;
+}
+.input-box{
+    border: 1px solid #414040;
+    display: block;
+    border-radius: 12px;
+    padding: 1.5%;
+    margin: 1%;
+    width: 95%;
+
+}
+.input-text{
+    font-family: 'Inria Sans';
+    font-size: 12px;
+
+}
+.input-text-rm{
+    font-family: 'Inria Sans';
+    font-size: 10px;
+}
+
+.fp{
+    color: rgb(120, 120, 204);
+    font-family: 'Inria Sans';
+    font-size: 12px;
+    display: inline;
+    margin-left: 120px;
+    margin-right:auto;
+}
+.input-section{
+    margin-bottom: 15px;
+}
+
+.text-center{
+    text-align: center;
+    margin: auto;
+
+}
+.scale-text{
+    font-size: 10px;
+    margin:20px;
+}
+
+.color-blue{
+color: rgb(120, 120, 204);
+font-size: 10px
+
+}
+
+
+.textl{
+font-size: 10px;
+font-family: 'Inria Sans';
+}
+
+.btn-text{
+    font-size: 18px;
+    font-family: 'Inria Sans';
+}
+.btn{
+    background-color: rgb(27, 70, 198);
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+    margin-top: 10px;
+
+
+}
+a{
+    text-decoration: none;
+    color: rgb(120, 120, 204);
+    font-family: 'Inria Sans';
+    font-size: 12px;
+}
+input [type=checkbox]{
+    width: 10px;
+    height: 10px;
+}
+
+.img-logo{
+    width: 100%;
+    height: auto;
+    margin-top: 90%;
+
+}

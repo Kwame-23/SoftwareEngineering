@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+      <link rel="stylesheet" type="text/css" href="../style/loginStyle.css">
+</head>
+<body>
+    <div class = "float-left">
+        <img src="../img/logo.jpeg" class = "img-logo">
+    </div>
+    <div class = "float-right">
+        <div class ="text-center">
+            <h1>Login</h1>
+            <p class="scale-text">Sign in here to get started</p>
+        </div>
+        <form class = "form-bg">
+            <div class="input-section">
+                <label for="username" class = "input-text"><strong>Email<strong></label>
+                <input type="text" id="username" name="username" class = "input-box" required>
+            </div>
+            
+            <div>
+                <label for="password" class = "input-text"><strong>Password<strong></label><span class = "fp"><a href="">Forget Password?</a></span>
+                <input type="password" id="password" name="password" class = "input-box" required>
+            </div>
+            <div>
+                <input type="checkbox">
+                <span class="input-text-rm"> Remember Me</span>
+            </div> 
+            
+            <div>
+                <button type="submit" class="btn-text btn">Sign In</button>
+                <p class="textl">Don't have an account? <a href="" class= "color-blue text-center">Create account</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
