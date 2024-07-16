@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+	<link rel="stylesheet" href="register.css">
+</head>
+<body>
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>70-30 Page Layout</title>
+    <link rel="stylesheet" href="register.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 110%;
+            width: 100%
+        }
+        .container {
+            display: flex;
+            height: 80%;
+        }
+        .left {
+            flex: 70%;
+            background-color: white;
+        }
+        .right {
+            flex: 30%;
+            background: url('rightcorner.jpg') no-repeat center center;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <h1>Register</h1><br>
+            <p>Please create an account to access our services<p><br>
+            <div class="form-container">
+                <form id="register-form">
+                    <div class="role-select">
+                        <label for="role">Select your role:</label>
+                        <select id="role" required>
+                            <option value="">Select an option</option>
+                            <option value="doctor">Doctor</option>
+                            <option value="patient">Patient</option>
+                        </select>
+                    </div>
+                    <div class="form-fields" id="doctor-fields" style="display: none;">
+                        <label for="fname">First Name:</label>
+                        <input type="text" id="fname" name="fname" required><br><br>
+                        <label for="lname">Last Name:</label>
+                        <input type="text" id="lname" name="lname" required><br><br>
+                        <label for="Specialization">Specialization:</label>
+                        <input type="text" id="Specialization" name="Specialization" required><br><br>
+                        <label for="contact">Contact Number:</label>
+                        <input type="tel" id="contact" name="contact" required><br><br>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required><br><br>
+                    </div>
+                    <div class="form-fields" id="patient-fields" style="display: none;">
+                        <label for="fname">First Name:</label>
+                        <input type="text" id="fname" name="fname" required><br><br>
+                        <label for="lname">Last Name:</label>
+                        <input type="text" id="lname" name="lname" required><br><br>
+                        <div class="inline-fields">
+                            <div class="inline-field">
+                                <label for="dob">Date of Birth:</label>
+                                <input type="date" id="dob" name="dob" required>
+                            </div>
+                            <div class="inline-field">
+                                <label for="gender">Gender:</label>
+                                <div class="gender-selection">
+                                    <input type="radio" id="male" name="gender" value="male" required>
+                                    <label for="male">Male</label>
+                                    <input type="radio" id="female" name="gender" value="female">
+                                    <label for="female">Female</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inline-fields">
+                            <div class="inline-field">
+                                <label for="contact">Contact Number:</label>
+                                <input type="tel" id="contact" name="contact" required>
+                            </div>
+                            <div class="inline-field">
+                                <label for="emergencyContact">Emergency Contact Number:</label>
+                                <input type="tel" id="emergencyContact" name="emergencyContact" required>
+                            </div>
+                        </div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required><br><br>
+                    </div>
+                    <div class="button-container">
+                        <button type="submit">Register</button><br>
+                    </div>                
+                    <p>Already have an account? link needed<p>
+
+                </form>
+            </div>
+        </div>
+        <div class="right"></div>
+    </div>
+
+    <script src="register.js"></script>
+</body>
+</html>
+</body>
+</html>

@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 90%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* added rounded edges */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 0.5px;
+    text-decoration: none;
+    font-family: 'Inria Sans', Arial, sans-serif; /* ensure font is applied to h1 */
+}
+
+p{
+    text-align: center;
+    margin-top: 0.5px;
+    margin-bottom: 0.5px;
+
+}
+
+.role-select {
+    margin-bottom: 20px;
+}
+
+.form-fields {
+    display: none;
+}
+
+.form-fields label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-fields input, .form-fields select {
+    width: 80%; /* decreased width */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px; /* added rounded edges */
+}
+
+.inline-fields {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.inline-fields {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.inline-field {
+    flex-basis: 45%;
+    margin-right: 10px;
+}
+
+.inline-field label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.inline-field input[type="date"], .inline-field input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.gender-selection {
+    display: flex;
+    align-items: center;
+}
+
+.gender-selection label {
+    margin-left: 5px;
+    margin-right: 15px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* add some space above the button if needed */
+}
+
+button[type="submit"] {
+    background-color: #2729ab;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 50%;
+    height: 50%
+}
+
+button[type="submit"]:hover {
+    background-color: #10115d;
+}
+
+/* Added styles for the grey rectangle with rounded edges */
+.form-container {
+    width: 70%; /* reduced width */
+    margin: 0 auto; /* center the container */
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
