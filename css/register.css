@@ -1,16 +1,17 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
+    height: 200vh;
+    width: 60%;
 }
 
 .container {
-    width: 90%;
+    width: 70%;
     margin: 40px auto;
-    padding: 20px;
+    padding: 10px;
     background-color: #fff;
-    border: 1px solid #ddd;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px; /* added rounded edges */
+    border: 1px solid #ffffff;
+
 }
 
 h1 {
@@ -18,6 +19,8 @@ h1 {
     margin-bottom: 0.5px;
     text-decoration: none;
     font-family: 'Inria Sans', Arial, sans-serif; /* ensure font is applied to h1 */
+    font-weight: 100;
+    color: #0c1138;
 }
 
 p{
@@ -43,8 +46,8 @@ p{
 .form-fields input, .form-fields select {
     width: 80%; /* decreased width */
     padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
+    margin-bottom: 3px;
+    border: 1px solid #0e1972;
     border-radius: 10px; /* added rounded edges */
 }
 
@@ -68,14 +71,14 @@ p{
 
 .inline-field label {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 0.5px;
 }
 
 .inline-field input[type="date"], .inline-field input[type="tel"] {
     width: 100%;
     padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
+    margin-bottom: 7px;
+    border: 1px solid #3954a6;
     border-radius: 10px;
 }
 
@@ -114,8 +117,9 @@ button[type="submit"]:hover {
 .form-container {
     width: 70%; /* reduced width */
     margin: 0 auto; /* center the container */
-    background-color: #e0e0e0;
-    padding: 20px;
+    background-color: #ffffff;
+    padding: 10px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 15px;
+
 }
