@@ -5,8 +5,8 @@ document.addEventListener("DOMContentLoaded", function() {
   
     roleSelect.addEventListener("change", function() {
       if (this.value === "doctor") {
-        doctorFields.style.display = "block";
-        patientFields.style.display = "none";
+        doctorFields.style.display = "none";
+        patientFields.style.display = "block";
       } else if (this.value === "patient") {
         doctorFields.style.display = "none";
         patientFields.style.display = "block";
