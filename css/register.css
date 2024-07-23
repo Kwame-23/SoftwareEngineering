@@ -12,31 +12,25 @@ body {
     background-color: #fff;
     border: 1px solid #ffffff;
     height: 250vh;
-
 }
 
 h1 {
     text-align: center;
     margin-bottom: 0.5px;
     text-decoration: none;
-    font-family: 'Inria Sans', Arial, sans-serif; /* ensure font is applied to h1 */
+    font-family: 'Inria Sans', Arial, sans-serif;
     font-weight: 100;
     color: #0c1138;
 }
 
-p{
+p {
     text-align: center;
     margin-top: 0.5px;
     margin-bottom: 0.5px;
-
-}
-
-.role-select {
-    margin-bottom: 20px;
 }
 
 .form-fields {
-    display: none;
+    display: block; 
 }
 
 .form-fields label {
@@ -45,11 +39,11 @@ p{
 }
 
 .form-fields input, .form-fields select {
-    width: 80%; /* decreased width */
+    width: 80%;
     padding: 10px;
     margin-bottom: 3px;
     border: 1px solid #0e1972;
-    border-radius: 10px; /* added rounded edges */
+    border-radius: 10px;
 }
 
 .inline-fields {
@@ -96,7 +90,7 @@ p{
 .button-container {
     display: flex;
     justify-content: center;
-    margin-top: 20px; /* add some space above the button if needed */
+    margin-top: 20px;
 }
 
 button[type="submit"] {
@@ -107,20 +101,17 @@ button[type="submit"] {
     border-radius: 5px;
     cursor: pointer;
     width: 50%;
-    height: 50%
 }
 
 button[type="submit"]:hover {
     background-color: #10115d;
 }
 
-/* Added styles for the grey rectangle with rounded edges */
 .form-container {
-    width: 70%; /* reduced width */
-    margin: 0 auto; /* center the container */
+    width: 70%;
+    margin: 0 auto;
     background-color: #ffffff;
     padding: 10px;
     border-radius: 10px;
     font-size: 15px;
-
 }
