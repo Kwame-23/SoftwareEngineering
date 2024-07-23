@@ -1,0 +1,92 @@
+/* CSS */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.navbar {
+  background: linear-gradient(to right, #3b83ef, #186fd3, #0e4cbe, #0134b3);
+  height: 7%;
+  width: 99%;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 10%;
+  height: 60px;
+  margin-right: 20px;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.nav-link {
+  margin: 0 20px;  /* Added margin to space out the links */
+  text-decoration: none;
+  color: #ffffff;
+  transition: color 0.2s ease;
+  display: flex;
+  align-items: center;
+}
+
+.nav-link:hover {
+  color: #cccccc;
+}
+
+.nav-link i {
+  font-size: 18px;
+  margin-right: 10px;
+  color: white;
+}
+
+.sign-in {
+  margin-left: 20px;
+}
+
+.sign-in-link {
+  text-decoration: none;
+  color: #FFFFFF;
+  transition: color 0.2s ease;
+  display: flex;
+  align-items: center;
+}
+
+.sign-in-link:hover {
+  color: #CCCCCC;
+}
+
+.sign-in-link i {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.white-container {
+  background-color: #FFFFFF;
+  height: 46%;
+  width: 100%;
+}
+
+.grey-container {
+  background-color: #808080;
+  height: 47%;
+  width: 100%;
+}
