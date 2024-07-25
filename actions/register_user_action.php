@@ -49,7 +49,7 @@ if (isset($_POST['register'])) {
 } else {
     echo "<script>
     alert('Error: Form not submitted correctly');
-    window.location.href='../admin/register.php?msg=error'
+    window.location.href='../login/register.html?msg=error'
     </script>";
 }
 
