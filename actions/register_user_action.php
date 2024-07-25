@@ -6,15 +6,15 @@ if (isset($_POST['register'])) {
     $firstName = $_POST["firstName"]; 
     $lastName = $_POST["lastName"];                                              
     $email = $_POST["email"]; 
-    $contact = $_POST["contact"];
+//    $contact = $_POST["contact"];
     $password = $_POST["password"]; 
-    $role = $_POST["role"]; // Fetch selected role
+//    $role = $_POST["role"]; // Fetch selected role
 
     // Hash the password
     $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
     // Check if email is already in use
-    $sql = "SELECT email FROM patient WHERE email = ?";
+    $sql = "SELECT email FROM gamer WHERE email = ?";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("s", $email);
     $stmt->execute();
@@ -30,9 +30,9 @@ if (isset($_POST['register'])) {
         $stmt->close();
 
         // Insert into the database
-        $sql = "INSERT INTO patient (firstname, lastname, email, contact, password, role) VALUES (?, ?, ?, ?, ?, ?)";
+        $sql = "INSERT INTO gamer (firstname, lastname, email, contact, password) VALUES (?, ?, ?, ?, ?)";
         $stmt = $conn->prepare($sql);
-        $stmt->bind_param("ssssss", $firstName, $lastName, $email, $contact, $hashedPassword, $role);
+        $stmt->bind_param("ssss", $firstName, $lastName, $email, $hashedPassword);
         $result = $stmt->execute();
 
         if ($result) {
