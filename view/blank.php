@@ -32,8 +32,8 @@
             document.body.style.opacity = 0;
             setTimeout(() => {
                 window.location.href = 'home.php';
-            }, 800); // wait for the fade-out animation to complete
-        }, 500);
+            }, 1000); // wait for the fade-out animation to complete
+        }, 1000);
     </script>
 </body>
 </html>

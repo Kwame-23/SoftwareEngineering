@@ -16,10 +16,10 @@
             <input type="text" name="email" placeholder="Enter your email" class="input-field" required>
             <input type="password" name="password" placeholder="Enter your password" class="input-field" required>
             <div class="button-container">
-                <p style="text-decoration: underline;">Pick your sign</p>
+                <!-- <p style="text-decoration: underline;">Pick your sign</p>
                 <hr class="separator">
                 <button type="button" class="button"><i class="fas fa-times"></i></button>
-                <button type="button" class="button"><i class="fas fa-circle"></i></button><br>
+                <button type="button" class="button"><i class="fas fa-circle"></i></button><br> -->
                 <hr class="separator">
                 <button type="submit" name="signin-btn">Login!</button>
                 <p>Don't have an account? <a href="register.php">Sign up</a></p>
