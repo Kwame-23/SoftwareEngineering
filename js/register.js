@@ -1,17 +1,14 @@
 document.getElementById('register-form').addEventListener('submit', function (event) {
   // Prevent form submission
-  event.preventDefault();
+  // event.preventDefault();
 
   // Validate each field
   const firstName = document.getElementById('fname');
   const lastName = document.getElementById('lname');
-  const specialization = document.getElementById('Specialization');
-  const contact = document.getElementById('contact');
-  const emergencyContact = document.getElementById('emergencyContact');
   const email = document.getElementById('email');
   const password = document.getElementById('password');
-  const dob = document.getElementById('dob');
-  const gender = document.querySelector('input[name="gender"]:checked');
+  const confirmPassword = document.getElementById("confirmPassword");
+
 
   if (!validateName(firstName.value)) {
       alert('Please enter a valid first name');
@@ -22,18 +19,6 @@ document.getElementById('register-form').addEventListener('submit', function (ev
   if (!validateName(lastName.value)) {
       alert('Please enter a valid last name');
       lastName.focus();
-      return;
-  }
-
-  if (!validateContactNumber(contact.value)) {
-      alert('Please enter a valid contact number');
-      contact.focus();
-      return;
-  }
-
-  if (emergencyContact && !validateContactNumber(emergencyContact.value)) {
-      alert('Please enter a valid emergency contact number');
-      emergencyContact.focus();
       return;
   }
 
@@ -49,17 +34,10 @@ document.getElementById('register-form').addEventListener('submit', function (ev
       return;
   }
 
-  if (!dob.value) {
-      alert('Please enter your date of birth');
-      dob.focus();
-      return;
-  }
-
-  if (!gender) {
-      alert('Please select your gender');
-      return;
-  }
-
+  if (password !== confirmPassword) {
+    alert("Passwords do not match.");
+    return false;
+}
   // Submit the form if all validations pass
   document.getElementById('register-form').submit();
 });
@@ -67,12 +45,6 @@ document.getElementById('register-form').addEventListener('submit', function (ev
 function validateName(name) {
   const regex = /^[a-zA-Z]+$/;
   return regex.test(name);
-}
-
-function validateContactNumber(contact) {
-  // Updated regex to accommodate various contact number formats
-  const regex = /^(\+\d{1,3}\s?)?(\(?\d{2,4}\)?[\s.-]?)?\d{3}[\s.-]?\d{4}$/;
-  return regex.test(contact);
 }
 
 function validateEmail(email) {
