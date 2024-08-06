@@ -25,7 +25,7 @@
                     <i class="fas fa-cogs" style="color:white;"></i>
                     <span style="color:white;">Services</span>
                 </a>
-                <a href="#" class=""nav-link style="margin-right: 25px;">
+                <a href="profile.php" class=""nav-link style="margin-right: 25px;">
                     <i class="fas fa-user" style="color:white;"></i>
                     <span style="color:white;">Profile</span>
                 </a>
