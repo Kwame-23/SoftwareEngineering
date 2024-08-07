@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // API response
     $api_response = '{
-        "email": "tiffanydegbotse123@gmail.com",
+        "email": "roboxoxo233@gmail.com",
         "autocorrect": "",
         "deliverability": "DELIVERABLE",
         "quality_score": "0.95",
