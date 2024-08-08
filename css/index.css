@@ -43,7 +43,7 @@ main {
 }
 
 .hero {
-    background-image: url('tictactoe.jpg');
+    background-image: url('../img/tictactoe.jpg');
     background-size: cover;
     background-position: center;
     padding: 60px 20px;
