@@ -1,7 +1,7 @@
 <?php
 function get_image_fxn($conn, $user_id) {
     // Prepare SQL statement
-    $sql = "SELECT imagepath FROM profile WHERE gamer_id = ? ORDER BY id DESC LIMIT 1";
+    $sql = "SELECT imagepath FROM profile WHERE gamer_id = ?";
     
     if ($stmt = $conn->prepare($sql)) {
         // Bind parameters

@@ -48,6 +48,22 @@ $profilePictureUrl = getProfilePicture($_SESSION['user_id']);
             color: #007bff;
             font-size: 18px;
         }
+        .white-box {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-top: 40px;
+
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-control {
+            border-radius: 5px;
+            padding: 10px;
+        }
     </style>
 </head>
 <body>
@@ -67,6 +83,16 @@ $profilePictureUrl = getProfilePicture($_SESSION['user_id']);
                                 <i class="fas fa-pencil-alt"></i>
                             </a>
                         </div>
+                    </div>
+                </div>
+
+                <!-- White Box with Textboxes -->
+                <div class="white-box">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Enter text here">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Enter another text here">
                     </div>
                 </div>
             </div>
