@@ -2,8 +2,12 @@
 include_once '../settings/core.php';
 include_once '../functions/getprofile.php';
 include_once '../settings/connection.php';
+include_once '../functions/get_image_fxn.php';
+
 $profilePictureUrl = getProfilePicture($_SESSION['user_id']);
+// $username = getUserName($_SESSION['user_id']); // Assuming you have a getUserName function
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -64,6 +68,14 @@ $profilePictureUrl = getProfilePicture($_SESSION['user_id']);
             border-radius: 5px;
             padding: 10px;
         }
+
+        .cover .user-name {
+            color: yellow;
+            font-weight: bold;
+            text-align: right;
+            flex-grow: 1;
+            font-size: larger;
+        }
     </style>
 </head>
 <body>
@@ -71,11 +83,17 @@ $profilePictureUrl = getProfilePicture($_SESSION['user_id']);
         <div class="col-md-5 mx-auto">
             <!-- Profile widget -->
             <div class="bg-white shadow rounded overflow-hidden">
-                <div class="px-4 pt-0 pb-4 cover">
+                <div class="px-4 pt-0 pb-4 cover d-flex align-items-end">
                     <div class="media align-items-end profile-head">
                         <div class="profile mr-3">
-                            <img src="../img/gamelogo.png" class='rounded mb-2 img-thumbnail'>
-                           
+                            <?php
+                            $profileImagePath = get_image_fxn($conn, $_SESSION['user_id']);
+                            if ($profileImagePath !== false) {
+                                echo "<img src='{$profileImagePath}' class='rounded mb-2 img-thumbnail'>";
+                            } else {
+                                echo "<img src='../img/gamelogo.png' class='rounded mb-2 img-thumbnail'>";
+                            }
+                            ?>
                             <a href="#" class="btn-edit-picture btn-upload-picture" data-toggle="modal" data-target="#uploadProfilePictureModal">
                                 <i class="fas fa-camera"></i>
                             </a>
@@ -84,6 +102,7 @@ $profilePictureUrl = getProfilePicture($_SESSION['user_id']);
                             </a>
                         </div>
                     </div>
+                    <div class="user-name">Boy</div>
                 </div>
 
                 <!-- White Box with Textboxes -->
@@ -143,3 +162,7 @@ $profilePictureUrl = getProfilePicture($_SESSION['user_id']);
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 </html>
+
+
+
+
